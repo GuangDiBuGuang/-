@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>狗光地</title>
+    <link rel="stylesheet" type="text/css" href="1.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin: 0;
+        min-height: 100vh;
+        background-color: aqua;
+        /*背景渐变层*/
+         background-image: 
+          radial-gradient(
+            closest-side,
+            rgb(6, 172, 255),
+            rgba(219, 61, 26, 0)
+          ),
+          radial-gradient(
+            closest-side,
+            rgb(15, 253, 138),
+            rgba(248, 6, 167, 0)
+          ),
+          radial-gradient(
+            closest-side,
+            rgb(238, 203, 151),
+            rgba(254, 234, 131, 0)
+          ),
+          radial-gradient(
+            closest-side,
+            rgb(14, 126, 218),
+            rgba(76, 10, 255, 0)
+          ),
+          radial-gradient(
+            closest-side,
+            rgb(180, 78, 121),
+            rgba(248, 192, 147, 0)
+          );
+
+        background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax,
+          110vmax 110vmax,90vmax 90vmax;
+        background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax,
+          -30vmax -10vmax, 50vmax 50vmax;
+        background-repeat: no-repeat;
+        animation: 7s movement linear infinite;}
+         @keyframes movement {
+        0%,
+        100% {
+          background-size: 200vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax,
+            110vmax 110vmax;
+          background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax,
+            -30vmax -10vmax, 50vmax 50vmax;
+        }
+        25% {
+          background-size: 100vmax 100vmax, 90vmax 90vmax, 100vmax 100vmax,
+            90vmax 90vmax, 60vmax 60vmax;
+          background-position: -60vmax -90vmax, 50vmax -40vmax, 0vmax -20vmax,
+            -40vmax -20vmax, 40vmax 60vmax;
+        }
+        50% {
+          background-size: 80vmax 80vmax, 110vmax 110vmax, 80vmax 80vmax,
+            60vmax 60vmax, 80vmax 80vmax;
+          background-position: -50vmax -70vmax, 40vmax -30vmax, 10vmax 0vmax,
+            20vmax 10vmax, 30vmax 70vmax;
+        }
+        75% {
+          background-size: 80vmax 80vmax, 110vmax 110vmax, 80vmax 80vmax,
+            60vmax 60vmax, 80vmax 80vmax;
+          background-position: -50vmax -70vmax, 40vmax -30vmax, 10vmax 0vmax,
+            20vmax 10vmax, 30vmax 70vmax;
+        }
+      }
+      /*登入框的总容器*/
+      .container {
+        /*相对定位*/
+        position: relative;
+        /*图层等级*/
+        z-index: 1;
+        /*背景颜色*/
+        background-color: rgba(255, 255, 255, 0.3);
+        /*圆角*/
+        border-radius: 10px;
+        /*弹性盒子*/
+        display: flex;
+        /*弹性布局，垂直方向*/
+        flex-direction: column;
+        /*水平居中*/
+        justify-content: center;
+        /*垂直居中*/
+        align-items: center;
+        /*宽度*/
+        width: 350px;
+        /*高度*/
+        height: 500px;
+        /*阴影*/
+        box-shadow: 5px 5px 180px 10px rgb(0, 0, 0);
+      } /*登入框的容器*/
+      .hezi {
+        display: flex;
+        margin: 8px;
+        background: linear-gradient(50deg, #37fff576, #81a6ff98);
+        font-weight: bold;
+        font-size: 10px;
+        padding: 0px 10px;
+        height: 25px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="2.html">
+      <div class="container">
+        <img src="1.jpg" width="80px" height="140px" />
+      </a><div class="hezi">
+      <p style="color: rgb(6, 100, 95)">点击查看</p>
+    </div>
+    </div>
+  </body>
+</html>
