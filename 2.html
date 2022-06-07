@@ -44,11 +44,29 @@
         font-size: 20px;
         color: black;
       }
+      @media (max-width: 600px) {
+        .cebian {
+          display: none;
+        }
+        .neirong {
+          flex-direction: column;
+        }
+        .shujuqu {
+          flex-direction: column;
+        }
+        .youqu {
+          margin-left: 8px;
+        }
+        .shuju {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
     </style>
   </head>
   <body class="flex">
     <!--侧边栏-->
-    <div style="width: 200px; z-index: 1" class="baise yinying">
+    <div style="width: 200px; z-index: 1" class="cebian baise yinying">
       <!--头像框-->
       <a href="https://space.bilibili.com/637015285">
         <div
@@ -75,16 +93,25 @@
       <!--头部栏-->
       <div style="height: 100px; z-index: 1" class="baise yinying"></div>
       <!--内容区-->
-      <div style="overflow: auto" class="flex1 flex">
+      <div style="overflow: auto" class="neirong flex1 flex">
         <!--左区-->
         <div style="flex: 3" class="flex column mg8">
           <!--数据区-->
-          <div class="flex">
+          <div class="shujuqu flex">
             <!--数据块-->
-            <div style="height: 100px" class="flex1 baise mgr8 yinying"></div>
-            <div style="height: 100px" class="flex1 baise mgr8 yinying"></div>
-            <div style="height: 100px" class="flex1 baise mgr8 yinying"></div>
-            <div style="height: 100px" class="flex1 baise yinying"></div>
+            <div
+              style="height: 100px"
+              class="flex1 shuju baise mgr8 yinying"
+            ></div>
+            <div
+              style="height: 100px"
+              class="flex1 shuju baise mgr8 yinying"
+            ></div>
+            <div
+              style="height: 100px"
+              class="flex1 shuju baise mgr8 yinying"
+            ></div>
+            <div style="height: 100px" class="flex1 shuju baise yinying"></div>
           </div>
           <!--列表区-->
           <div class="flex column">
@@ -97,7 +124,7 @@
           </div>
         </div>
         <!--右区-->
-        <div style="flex: 1" class="flex column mgr8 mgt8">
+        <div style="flex: 1" class="flex column mgr8 mgt8 youqu">
           <!--提示区-->
           <div style="height: 400px" class="baise yinying"></div>
           <!--消息区-->
@@ -107,4 +134,5 @@
     </div>
   </body>
 </html>
+
 
